@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/CAN_sender.hpp
+iostream
+-
+stdio.h
+-
+sys/time.h
+-
+stdlib.h
+-
+string.h
+-
+unistd.h
+-
+arpa/inet.h
+-
+sys/socket.h
+-
+
+/home/nrssimul/Desktop/AFT_test/src/CAN_sender.cpp
+CAN_sender.hpp
+/home/nrssimul/Desktop/AFT_test/src/CAN_sender.hpp
+
