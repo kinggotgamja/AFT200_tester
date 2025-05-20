@@ -10,4 +10,5 @@
   1. at /build
   2. ./AFT~
   3. If Sensor Force ID: 1 (normaly 1)
-  4. insert "1" at ID
+  4. insert "1" at ID request
+  5. after that, enter the number "3,1,0~"
