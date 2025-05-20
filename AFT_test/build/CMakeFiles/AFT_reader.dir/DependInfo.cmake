@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yuni/AFT_test/src/CAN_sender.cpp" "/home/yuni/AFT_test/build/CMakeFiles/AFT_sender.dir/src/CAN_sender.o"
+  "/home/yuni/AFT_test/src/AFT200D80_reader.cpp" "/home/yuni/AFT_test/build/CMakeFiles/AFT_reader.dir/src/AFT200D80_reader.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

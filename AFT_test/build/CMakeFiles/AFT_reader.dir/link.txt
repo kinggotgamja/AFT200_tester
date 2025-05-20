@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/AFT_reader.dir/src/AFT200D80_reader.o  -o AFT_reader 

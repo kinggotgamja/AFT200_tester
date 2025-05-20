@@ -116,5 +116,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/AFT_reader.dir/DependInfo.cmake"
   "CMakeFiles/AFT_sender.dir/DependInfo.cmake"
   )

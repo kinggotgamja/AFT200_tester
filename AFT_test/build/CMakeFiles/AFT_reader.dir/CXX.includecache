@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../include/CAN_sender.hpp
+../include/AFT200D80_reader.hpp
 iostream
 -
 stdio.h
@@ -24,7 +24,7 @@ arpa/inet.h
 sys/socket.h
 -
 
-/home/yuni/AFT_test/src/CAN_sender.cpp
-CAN_sender.hpp
-/home/yuni/AFT_test/src/CAN_sender.hpp
+/home/yuni/AFT_test/src/AFT200D80_reader.cpp
+AFT200D80_reader.hpp
+/home/yuni/AFT_test/src/AFT200D80_reader.hpp
 

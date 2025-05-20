@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nrssimul/Desktop/AFT_test
+CMAKE_SOURCE_DIR = /home/yuni/AFT_test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nrssimul/Desktop/AFT_test/build
+CMAKE_BINARY_DIR = /home/yuni/AFT_test/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nrssimul/Desktop/AFT_test/build/CMakeFiles /home/nrssimul/Desktop/AFT_test/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuni/AFT_test/build/CMakeFiles /home/yuni/AFT_test/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nrssimul/Desktop/AFT_test/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuni/AFT_test/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named AFT_reader
+
+# Build rule for target.
+AFT_reader: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 AFT_reader
+.PHONY : AFT_reader
+
+# fast build rule for target.
+AFT_reader/fast:
+	$(MAKE) -f CMakeFiles/AFT_reader.dir/build.make CMakeFiles/AFT_reader.dir/build
+.PHONY : AFT_reader/fast
+
+#=============================================================================
 # Target rules for targets named AFT_sender
 
 # Build rule for target.
@@ -122,6 +135,21 @@ AFT_sender: cmake_check_build_system
 AFT_sender/fast:
 	$(MAKE) -f CMakeFiles/AFT_sender.dir/build.make CMakeFiles/AFT_sender.dir/build
 .PHONY : AFT_sender/fast
+
+# target to build an object file
+src/AFT200D80_reader.o:
+	$(MAKE) -f CMakeFiles/AFT_reader.dir/build.make CMakeFiles/AFT_reader.dir/src/AFT200D80_reader.o
+.PHONY : src/AFT200D80_reader.o
+
+# target to preprocess a source file
+src/AFT200D80_reader.i:
+	$(MAKE) -f CMakeFiles/AFT_reader.dir/build.make CMakeFiles/AFT_reader.dir/src/AFT200D80_reader.i
+.PHONY : src/AFT200D80_reader.i
+
+# target to generate assembly for a file
+src/AFT200D80_reader.s:
+	$(MAKE) -f CMakeFiles/AFT_reader.dir/build.make CMakeFiles/AFT_reader.dir/src/AFT200D80_reader.s
+.PHONY : src/AFT200D80_reader.s
 
 # target to build an object file
 src/CAN_sender.o:
@@ -146,7 +174,11 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... AFT_reader"
 	@echo "... AFT_sender"
+	@echo "... src/AFT200D80_reader.o"
+	@echo "... src/AFT200D80_reader.i"
+	@echo "... src/AFT200D80_reader.s"
 	@echo "... src/CAN_sender.o"
 	@echo "... src/CAN_sender.i"
 	@echo "... src/CAN_sender.s"
