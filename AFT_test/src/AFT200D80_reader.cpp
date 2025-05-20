@@ -78,7 +78,7 @@ void NRS_AFT200D80_render::CAN_start()
                 inter_force[i] = (double)((int)recvmsg[6 + 2 * i] * 256 + (int)recvmsg[7 + 2 * i]) / 100 - 300;
             }
 
-            printf("ID: %d(%.1f), F_x: %d, F_y: %d, F_z: %d, %d, %d, %d \n", id, elapsed_ms,
+            printf("ID: %d(%.1f), F_x: %.1f, F_y: %.1f, F_z: %.1f \n", id, elapsed_ms,
                  inter_force[0], inter_force[1], inter_force[2]);
         }
         else if(recvmsg[4] == sendbuf[6]+1)
@@ -92,7 +92,7 @@ void NRS_AFT200D80_render::CAN_start()
                 inter_moment[i] = (double)((int)recvmsg[6 + 2 * i] * 256 + (int)recvmsg[7 + 2 * i]) / 500 - 50;
             }
 
-            printf("ID: %d(%.1f), M_x: %d, M_y: %d, M_z: %d, %d, %d, %d \n", id, elapsed_ms,
+            printf("ID: %d(%.1f), M_x: %.1f, M_y: %.1f, M_z: %.1f \n", id, elapsed_ms,
                  inter_moment[0], inter_moment[1], inter_moment[2]);
         }
     
