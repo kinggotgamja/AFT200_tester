@@ -1,4 +1,5 @@
 * This code is designed for reading the AFT200-D80 6-axis force sensor of AIDIN Robotics in South Korea
+* it use the CAN version -> Need CAN to Ethernet
 * it do not require the ROS system
 
 * Build procedure
